@@ -1,0 +1,24 @@
+I = imread("amsterdam.bmp");
+imshow(I)
+% size(I,[1,2])
+% center = (700/2,734/2), top = (700/2,0)
+% from " Nieuwmarkt ”(near the center of the picture) to “ Station Amsterdam Centraal ”
+% nimg = insertShape(I, 'Line', [350 367 350 0], 'Color', 'r');
+
+%%%
+imshow(I);
+hold on;  % Enable hold to overlay the star on the image
+
+line_vertices = [350, 367; 350, 0];
+star_vertices = [350, 400; 370, 500;300, 440; 400, 440; 330, 500;350,400];
+
+plot(line_vertices(:, 1), line_vertices(:, 2), 'r', 'LineWidth', 2);
+plot(star_vertices(:, 1), star_vertices(:, 2), 'm', 'LineWidth', 2);
+
+hold off; % Release the hold
+%%%
+
+%%%
+for i=1:3
+    [i_max,i_id] = max(I[:,:,])
+%%%

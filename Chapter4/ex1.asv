@@ -1,0 +1,11 @@
+A = rand(4,8);
+
+for r=1:4
+    for c=1:8
+        if A(r,c)>0.5
+            sprint('Number at %s row and %s column: %f is greater than 0.5',iptnum2ordinal(r),iptnum2ordinal(c),A(r,c));
+        else
+            sprintf('Number at',iptnum2ordinal(r),'row and ',iptnum2ordinal(c),'column:',A(r,c),'is less than 0.5',iptnum2ordinal(r),iptnum2ordinal(c),A(r,c))
+        end
+    end
+end
