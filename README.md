@@ -1,6 +1,6 @@
 # Neuroinformatics
 Corollary Discharge Mechanism helps in reducing the neural response to the self-triggered outcomes. This mechanism is hampered in patients affected with schizophrenia.
-In this project, EEG data [https://www.kaggle.com/datasets/broach/button-tone-sz](data link) is analysed to verify this suppression hypothesis.
+In this project, EEG data (https://www.kaggle.com/datasets/broach/button-tone-sz)[data link] is analysed to verify this suppression hypothesis.
 Methods used:
  - Event related potentials (trial and group averaged)
  - Time-frequency analysis (per participant visualization and permutation based cluster-level thresholding)
